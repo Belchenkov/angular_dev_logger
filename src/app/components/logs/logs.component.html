@@ -10,6 +10,10 @@
     <span class="log-date">
       <i class="far fa-clock"></i> {{ log.date | date:"dd/MM/yy H:mm:s" }}
     </span>
-    <i class="far fa-trash-alt text-danger" id="delete"></i>
+    <i
+      class="far fa-trash-alt text-danger"
+      id="delete"
+      (click)="onDelete(log)"
+    ></i>
   </li>
 </ul>

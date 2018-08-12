@@ -1,7 +1,8 @@
-<ul class="list-group">
+<ul class="list-group" *ngIf="loaded && logs?.length > 0">
   <li
     *ngFor="let log of logs"
     class="list-group-item d-flex justify-content-between align-items-center"
+    [class.list-group-item-secondary]="selectedLog === log"
   >
     <i class="far fa-list-alt"></i>
     <a href="#" (click)="onSelect(log)">
@@ -17,3 +18,11 @@
     ></i>
   </li>
 </ul>
+
+<div *ngIf="loaded && logs.length == 0" class="mt-5 alert alert-info">
+  <h5 class="text-center">Лог пуст</h5>
+</div>
+
+<div *ngIf="!loaded">
+  <h5>Загрузка ...</h5>
+</div>

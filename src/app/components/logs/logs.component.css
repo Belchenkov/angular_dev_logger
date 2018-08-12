@@ -1,0 +1,33 @@
+.log-date {
+  color: #b4ae1d;
+  font-size: 1.1rem;
+}
+
+.list-group-item {
+  transition: all .5s;
+}
+
+.list-group-item:hover {
+  transition: all .5s;
+  transform: translate3d(2px, 2px, 5px);
+}
+
+.list-group-item > a {
+  text-decoration: none;
+}
+
+.list-group-item > a:hover {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+#delete {
+  transition: all .7s;
+}
+
+#delete:hover {
+  transition: all .7s;
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+

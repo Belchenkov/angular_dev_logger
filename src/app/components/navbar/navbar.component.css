@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+.navbar-brand {
+  font-family: 'Monoton', cursive;
+  font-size: 1.4rem;
+  text-shadow: 0 0 2px #000;
+}

@@ -1,0 +1,27 @@
+<div class="card card-body mb-3">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input 
+        type="text" 
+        class="form-control"
+        placeholder="Лог ... "
+        name="text"
+        [(ngModel)]="text"
+      >
+    </div>
+    <button
+      type="submit"
+      class="btn btn-outline-info font-weight-bold"
+      [disabled]="!this.text"
+    >
+      <i class="fas fa-plus-circle"></i> Добавить лог
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-warning ml-3 font-weight-bold"
+      [hidden]="!this.text"
+      (click)="clearState()"
+    ><i class="fas fa-eraser"></i> Очистить
+    </button>
+  </form>
+</div>
